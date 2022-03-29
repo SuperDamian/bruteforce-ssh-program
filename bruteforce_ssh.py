@@ -22,7 +22,7 @@ else:
 
     y = 1
 
-    for x in dictionary.readlines():
+    for x in dictionary:
         try:
             odstep = 15 - len(x)
             ssh.connect(host, username=login, password=x)
